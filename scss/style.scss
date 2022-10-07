@@ -1,37 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
 @import "./core/variables";
+@import "./sections/topmenu";
 
-    $color-theme: #20D3C2;
-    $color-theme-light: #EDFCFA;
-    $color-theme-dark: #0e153d;
-    $color-theme-dark-light: #50546E; 
-    $color-dark: #080C24;
-    $color-white: #ffffff;
-    $color-gray-0: #aaaaaa;
-    $color-gray-1: #cccccc;
-    $color-gray-2: #e3e3e3;
-    $color-gray-3: #eeeeee;
-    $color-gray-4: #f6f6f6;
-    $color-gray-5: #777777;
-    $color-product-instock: #82D8C6;
-    $color-product-outofstock: #FE6C6C;
-
-    $font-poppins: 'Poppins', sans-serif;
-    $font-family: 'Poppins', sans-serif;
-    $font-weight-regular: 400;
-    $font-weight-medium: 500;
-    $font-weight-bold: 700;
-    $font-weight-extra-bold: 800;
-    $font-size-14: 0.875rem;
-    $font-size-16: 1rem;
-    $font-size-18: 1.125rem;
-    $font-size-20: 1.25rem;
-    $font-size-35: 2.188rem;
-    $font-size-36: 2.25rem;
-    $font-size-60: 3.75rem;
-    $font-size-65: 4.063rem;
-
-    $border-radius-small: 8px;
-    $border-radius-medium: 25px;
-    $border-radius-rounded: 50%;
