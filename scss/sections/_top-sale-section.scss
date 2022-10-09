@@ -1,0 +1,42 @@
+.top-sale-section {
+    position: relative;
+    background-color: $color-gray-6;
+    height: 100%;
+}
+
+.container {
+
+}
+
+#rightimg {
+    position: absolute;
+    right: 0% ;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.top-sale-titel {
+    position: absolute;
+    top: 200px;
+    right: 770px;
+    width: 350px;
+    font-size: $font-size-65;
+    font-family: $font-poppins;
+    font-weight: $font-weight-extra-bold;
+}
+
+.under-text {
+    position: absolute;
+    right: 725px;
+    font-size: $font-size-20;
+    font-family: $font-poppins;
+    font-weight: $font-weight-regular;
+}
+
+#sale-btn {
+    position: absolute;
+    right: 880px;
+    top: 480px;
+}

@@ -1,5 +1,6 @@
 
 .top-menu {
+    position: relative;
     background-color: $color-gray-6;
     height: 100px;
 
@@ -13,10 +14,10 @@
         margin-right: 20px;
     }
 
-        .site-nav-bar {
-            display: flex;
-        }
+        
             .brand {
+                position: absolute;
+                left: 7%;
                 color: $color-theme-dark;
                 font-size: $font-size-35;
                 font-family: $font-poppins;
@@ -27,6 +28,8 @@
             }
             
                 .nav-pills {
+                    position: absolute;
+                    right: 40%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -34,6 +37,7 @@
                     .nav-item {
                         color: $color-theme-dark;
                     }
+
            #link {
             color: $color-theme-dark;
             font-size: $font-size-16;
@@ -44,10 +48,8 @@
                     color: $color-theme;
                 }
            }
-           
-           .btn-group {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            margin-right: 0px;
-           }
+        #top-btn {
+            position: absolute;
+            right: 7%;
+        }  
+          
