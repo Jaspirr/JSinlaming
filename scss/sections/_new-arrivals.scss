@@ -1,0 +1,56 @@
+.new-arrivals {
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.clearance {
+    position: relative;
+    margin-right: 3rem;
+}
+
+.clearance-titel {
+    position: absolute;
+    top: 150px;
+    right: 540px;
+    font-family: $font-poppins;
+    font-size: $font-size-45;
+    font-weight: $font-weight-bold;
+    width: 40%;
+}
+
+.clearance-undertext {
+    position: absolute;
+    top: 300px;
+    right: 540px;
+    width: 40%;
+    font-family: $font-poppins;
+    font-size: $font-size-16;
+    font-weight: $font-weight-regular;
+}
+
+#btn-clearance {
+    position: absolute;
+    top: 440px;
+    right: 787px;
+}
+
+.arrivals {
+    position: relative;
+
+}
+
+.arrivals-titel {
+    position: absolute;
+    top: 250px;
+    right: 450px;
+    font-size: $font-size-45;
+    font-weight: $font-weight-bold;
+    font-family: $font-poppins;
+    width: 20%;
+}
+
+#btn-arrivals {
+    position: absolute;
+    top: 440px;
+    right: 405px;
+}
