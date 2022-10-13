@@ -1,0 +1,28 @@
+.flashsale-left {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-left: 6.5rem;
+}
+
+.div1 { 
+    grid-area: 2 / 6 / 4 / 6; 
+}
+
+.div2 { 
+    grid-area: 4 / 6 / 6 / 6; 
+}
+
+.div3 { 
+    grid-area: 2 / 7 / 4 / 7; 
+}
+
+.div4 { 
+    grid-area: 4 / 7 / 6 / 7;
+}
+
+.div5 { 
+    grid-area: 2 / 1 / 6 / 5; 
+}

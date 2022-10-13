@@ -3,15 +3,14 @@
     position: relative;
     background-color: $color-gray-6;
     height: 100px;
-
 }
     .container {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0;
+        padding: 0;
     }
 
         
@@ -29,13 +28,18 @@
             
                 .nav-pills {
                     position: absolute;
-                    right: 40%;
+                    right: 41.5%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    list-style: none;
+                    text-decoration: none;
                 }
                     .nav-item {
                         color: $color-theme-dark;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
 
            #link {
@@ -43,11 +47,18 @@
             font-size: $font-size-16;
             font-family: $font-poppins;
             font-weight: $font-weight-medium;
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            align-items: center;
 
                 &:hover {
                     color: $color-theme;
                 }
            }
+            
         #top-btn {
             position: absolute;
             right: 7%;

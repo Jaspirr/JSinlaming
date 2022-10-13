@@ -1,34 +1,61 @@
-.card {
-    position: relative;
-    height: 400px;
-    width: 285px;
-    border-radius: 0%;
-    border: none;
-    background: $color-gray-6;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,253,253,1) 40%, $color-gray-6 40%);
-    transition: 0.25s ease-in-out;
-    
-        .card-menu {
-            position: absolute;
-            right: 0.55rem;
-            top: 0.55rem;
-            list-style: none;
-        }
-
-            .card-body {
-                position: absolute;
-                bottom: 40%;
-                padding: 0;
-                width: 100%;
-              
-            }
-                &:hover {
-                    opacity: 1;
-                }
+.container {
+    max-width: 1110px;
 }
 
+ .card {
+     position: relative;
+     height: 400px;
+     width: 285px;
+     border-radius: 0%;
+     border: none;
+     background: $color-gray-6;
+     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,253,253,1) 40%, $color-gray-6 40%);
+     transition: 0.25s ease-in-out;
+
+     &:hover {
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,253,253,1) 40%, $color-gray-1 40%);
+        transition: 00.25s ease-in-out;
+    }
+   
+       
+
+    .card-menu {
+        position: absolute;
+        display: none;
+        right: 0.57rem;
+        top: 0.58rem;
+        list-style: none;
+        
+        }
+        .card-body {
+            position: absolute;
+            display: none;
+            bottom: 40%;
+            padding: 0;
+            height: 14%;
+            width: 100%;
+            transition: 00.25s ease-in-out;
+
+        }
+        
+        &:hover .card-menu{
+            transition: 00.25s ease-in-out;
+            display: block;
+        }
+       
+        &:hover .card-body {
+            transition: 00.25s ease-in-out;
+            display: block;
+        }
+}      
+       
 .fa-heart {
     color: $color-theme-dark;
+    background-color: $color-white;
+    text-decoration: none;
+
+   
+   
 }
 
 .fa-shuffle {
@@ -48,6 +75,17 @@
     border-radius: 50%;
     margin: auto;
     box-shadow: 0px 0px 18px -2px $color-gray-1;
+    text-decoration: none;
+
+    
+    &:hover {
+            background-color: $color-theme-dark;
+        }
+    &:hover .fa-heart {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+    
 }
 
 #shuffel {
@@ -60,6 +98,15 @@
     border-radius: 50%;
     margin-top: 5px;
     box-shadow: 0px 0px 18px -2px $color-gray-1;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-theme-dark;
+    }
+    &:hover .fa-shuffle {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
 }
 
 #bag {
@@ -72,4 +119,17 @@
     border-radius: 50%;
     margin-top: 5px;
     box-shadow: 0px 0px 18px -2px $color-gray-1;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-theme-dark;
+    }
+    &:hover .fa-bag-shopping {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+a {
+    color: $color-theme;
 }

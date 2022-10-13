@@ -1,0 +1,41 @@
+.breadcrumb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 430px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+#home-link {
+    color: $color-theme-dark;
+    text-decoration: none;
+    font-family: $font-poppins;
+    font-weight: $font-weight-medium;
+    margin-right: 0.5rem;
+
+    &:hover {
+        color: $color-theme;
+    }
+
+}
+
+#contact-link {
+    color: $color-theme-dark;
+    text-decoration: none;
+    font-family: $font-poppins;
+    font-weight: $font-weight-medium;
+    margin-left: 0.5rem;
+
+    &:hover {
+        color: $color-theme;
+    }
+
+}
+
+.google-map {
+    border:0; 
+    width: 100%; 
+    height: 380px;
+}
