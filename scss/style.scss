@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import "./core/variables";
+@import "./core/root";
 @import "./core/general";
 @import "./core/btn";
 @import "./sections/topmenu";
@@ -11,4 +12,11 @@
 @import "./sections/flash-sale-left";
 @import "./sections/breadcrumb";
 @import "./sections/contact-form";
+@import "./sections/footer";
 
+
+@media (min-width:1600px) {
+    .container {
+        max-width: 1920px;
+    }
+}

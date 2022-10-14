@@ -1,45 +1,70 @@
 .contact-form {
- 
+   margin-top: 60px;
+}
+
+.container {
+    max-width: 1110px;
+    justify-content: center;
 }
 
 h2 {
+    margin-left: 480px;
     font-size: $font-size-18;
     font-family: $font-poppins;
     font-weight: $font-weight-bold;
-    margin-left: 430px;
-    margin-top: 4rem;
-    margin-bottom: 30px;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+    gap: 40px;
 
+}
 
+textarea {
+    grid-column: 1 / -1 ;
+}
+.error {
+    color: $color-theme;
+    font-family: $font-poppins;
+    border: 1px solid $color-theme;
+}
+.errorMessage {
+    margin-top: 5px;
+    color: $color-theme;
+    font-family: $font-poppins;
+    font-size: 0.8em;
+}
+
+.lel {
+    display: flex;
+    gap: 2.5rem;
+}
 #name {
     padding: 18px 20px;
     width: 400px;
-    margin-left: 430px;
-    margin-right: 40px;
     border: 1px solid $color-lightgray;
+    font-family: $font-poppins;
 }
 #email {
     padding: 18px 20px;
     width: 400px;
-    margin-right: 430px;
     border: 1px solid $color-lightgray;
+    font-family: $font-poppins;
 }
 #message {
-    justify-content: center;
-    width: 890px;
+    width: 883px;
     min-height: 140px;
-    margin-left: 430px;
-    margin-top: 1.5rem;
     padding: 18px 20px;
     border: 1px solid $color-lightgray;
     resize: none;
+    font-family: $font-poppins;
+
 }
 #send-button {
     height: 50px;
     width: 170px;
-    margin-left: 430px;
-    margin-top: 1.5rem;
     border: 1px solid $color-lightgray;
+    margin-bottom: 3rem;
 }

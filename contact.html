@@ -55,16 +55,40 @@
     </section>
     
     <section class="contact-form">
-        
-            <h2>Come in Contact with Us</h2>
-            <form>
-                <input id="name" type="text">
-                <input id="email" type="email">
-                <textarea id="message"></textarea>
-                <button id="send-button" type="submit" class="btn-theme-contact">Post Comments</button>
-            </form>
+       <h2>Come in Contact with Us</h2> 
+            <div class="container">
+                <form novalidate>
+                    <div class="lel">
+                        <div>
+                        <input id="name" onkeyup="validate" type="text" placeholder="Your Name" >
+                        <div id="nameErrorMessage" class="errorMessage"></div>
+                        </div>
+
+                        <div>
+                        <input id="name" type="text" placeholder="Your Mail" >
+                        <div id="mailErrorMessage" class="errorMessage"></div>
+                    </div>
+                    </div>
+                    <div>
+                    
+                    <textarea id="message" placeholder="Comments" ></textarea>
+                    <div id="commentErrorMessage" class="errorMessage"></div></div>
+                    <button id="send-button" type="submit" class="btn-theme-contact">Post Comments</button>
+                </form>
+        </div>
     </section>
    
-    <div style="height: 5000px;"></div>
+    <footer>
+            <div class="socialmedia">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">© 2022 Fixxo. All Rights Reserved</div>
+    </footer>
+
+    <div style="height: 500px;"></div>
 </body>
 </html>
