@@ -8,7 +8,7 @@
 }
 
 h2 {
-    margin-left: 480px;
+    margin-left: 520px;
     font-size: $font-size-18;
     font-family: $font-poppins;
     font-weight: $font-weight-bold;
@@ -54,7 +54,7 @@ textarea {
     font-family: $font-poppins;
 }
 #message {
-    width: 883px;
+    width: 840px;
     min-height: 140px;
     padding: 18px 20px;
     border: 1px solid $color-lightgray;
@@ -64,7 +64,10 @@ textarea {
 }
 #send-button {
     height: 50px;
-    width: 170px;
+    width: 190px;
     border: 1px solid $color-lightgray;
     margin-bottom: 3rem;
+    font-size: $font-size-16;
+    font-family: $font-poppins;
+    font-weight: $font-weight-semi-bold;
 }
