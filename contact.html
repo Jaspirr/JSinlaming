@@ -60,19 +60,19 @@
                 <form onsubmit="submitForm(event)" novalidate>
                     <div class="lel">
                         <div>
-                        <input id="name" onkeyup="validate(event)" type="text" placeholder="Your Name" >
+                        <input id="name" onkeyup="validate(event)" type="text" placeholder="Your Name">
                         <div id="nameErrorMessage" class="errorMessage"></div>
                         </div>
 
-                        <div>
-                        <input id="name" type="text" placeholder="Your Mail" >
-                        <div id="mailErrorMessage" class="errorMessage"></div>
+                    <div>
+                        <input id="email" onkeyup="validate(event)" type="email" placeholder="Your Mail">
+                        <div id="emailErrorMessage" class="errorMessage"></div>
                     </div>
                     </div>
                     <div>
-                    
-                    <textarea id="message" placeholder="Comments" ></textarea>
-                    <div id="commentErrorMessage" class="errorMessage"></div></div>
+                        <textarea id="message" onkeyup="validate(event)" placeholder="Comments"></textarea>
+                        <div id="messageErrorMessage" class="errorMessage"></div>
+                    </div>
                     <button id="send-button" type="submit" class="btn-theme-contact">Post Comments</button>
                 </form>
         </div>
@@ -89,6 +89,5 @@
             <div class="copyright">© 2022 Fixxo. All Rights Reserved</div>
     </footer>
 
-    <div style="height: 500px;"></div>
 </body>
 </html>
