@@ -17,8 +17,8 @@ const MainMenuSection = () => {
             <div className="menu-icons">
                 <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass"/>
                 <MenuIcon link="/compare" icon="fa-regular fa-repeat"/>
-                <MenuIcon link="/wishlist" icon="fa-regular fa-heart"/>
-                <MenuIcon link="/shoppingcart" icon="fa-regular fa-bag-shopping"/>
+                <MenuIcon quantity="3" link="/wishlist" icon="fa-regular fa-heart"/>
+                <MenuIcon quantity="4" link="/shoppingcart" icon="fa-regular fa-bag-shopping"/>
             </div>
         </nav>
     )

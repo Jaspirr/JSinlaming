@@ -66,12 +66,8 @@
             align-items: center;
             box-shadow: 0 0 6px 4px $color-shadow;
             position: relative;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.1s ease-in-out;
             
-            i {
-                
-            }
-
             &:hover {
                 color: $color-white;
                 background-color: $color-theme-dark;
