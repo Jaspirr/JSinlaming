@@ -14,6 +14,12 @@
         font-size: $font-size-35;
         font-family: $font-poppins;
         font-weight: $font-weight-extra-bold;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-theme-dark;
+            text-decoration: none;
+        }
     }
 
     .menu-links {
@@ -35,6 +41,11 @@
                 color: $color-theme;
                 text-decoration: none;
             }  
+        }
+
+        .active {
+            color: $color-theme;
+            text-decoration: none;
         }
     }
 
@@ -67,6 +78,13 @@
                 box-shadow: 0 0 6px 4px $color-shadow;
                 text-decoration: none;
             }
+        }
+
+        .active {
+            color: $color-white;
+            background-color: $color-theme-dark;
+            box-shadow: 0 0 6px 4px $color-shadow;
+            text-decoration: none;
         }
     }
 }
