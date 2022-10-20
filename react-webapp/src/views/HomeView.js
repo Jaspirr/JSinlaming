@@ -7,7 +7,6 @@ import MainMenuSection from '../sections/MainMenuSection'
 const HomeView = () => {
     return (
         <>
-            
             <MainMenuSection />
             <FooterSection />
         </>

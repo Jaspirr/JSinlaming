@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     .container {
         max-width: 1110px;
@@ -55,6 +55,7 @@
         align-items: center;
 
         .menu-icon {
+            position: relative;
             background-color: $color-white;
             color: $color-theme-dark;
             width: 36px;
@@ -65,7 +66,6 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 6px 4px $color-shadow;
-            position: relative;
             transition: all 0.1s ease-in-out;
             
             &:hover {
@@ -75,6 +75,8 @@
                 text-decoration: none;
             }
         }
+
+
 
         .active {
             color: $color-white;
