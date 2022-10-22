@@ -1,7 +1,74 @@
 .product-grid {
+    margin-bottom: 60px;
     .container {
-
+        max-width: 1110px;
     }
 
+    .card {
+        border: none;
+
+        img,
+        .card-img {
+            height: 210px;
+            width: 255px;
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,253,253,1) 40%, $color-gray-6 40%);
+            position: relative;
+
+            .card-menu {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: none;
+
+                .menu-link {
+                    height: 36px;
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    color: $color-theme-dark;
+                    background-color: $color-white;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 6px 4px $color-shadow;
+                    position: relative;
+
+                    &:hover {
+
+                    }
+                }
+            }
+        }
+
+        .btn-card-theme {
+
+        }
+       
     
+
+        .card-body {
+            .card-category {
+                
+            } 
+            .card-title  {
+            
+            }
+            .card-rating  {
+
+            }
+            .card-price {
+
+            }
+
+        }
+        
+        &:hover {
+            .card-menu {
+
+            }
+            .btn-card-theme {
+
+            }   
+        }
+    }
 }
