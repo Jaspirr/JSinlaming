@@ -19,22 +19,13 @@
 
         .card-img {
             display: grid;
-
             background-color: $color-gray-2;
             position: relative;
 
             img {
                 width: 100%;
-
-                .btn-card-theme {
-                    position: absolute;
-                    bottom: 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 50px;
-                    }
+                height: 210px;
+                object-fit: cover;
             }
 
             .card-menu {
@@ -68,8 +59,16 @@
             }
         }
 
-        
-       
+        .btn-card-theme {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+        }
+
     
 
         .card-body {
@@ -97,13 +96,21 @@
         
         &:hover {
             .card-menu {
-                display: block;
+                display: block !important;
             }
             .btn-card-theme {
-                display: flex;
+                display: flex !important;
                 justify-content: center;
                 align-items: center;
             }   
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-grid {
+        .container {
+            max-width: 1110px;
         }
     }
 }

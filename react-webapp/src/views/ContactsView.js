@@ -1,11 +1,16 @@
 import React from 'react'
-import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
+import BreadcrumbSection from '../sections/BreadcrumbSection'
+import FooterSection from '../sections/FooterSection'
+
 
 const ContactsView = () => {
+    window.top.document.title = 'Contacts | Fixxo.'
+
     return (
         <>
-           <MainMenuSection />
+            <MainMenuSection />
+            <BreadcrumbSection currentPage="Contacts" />
             <FooterSection />
         </>
     )
