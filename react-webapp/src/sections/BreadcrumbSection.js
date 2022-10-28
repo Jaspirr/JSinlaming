@@ -7,7 +7,7 @@ const BreadcrumbSection = ({currentPage}) => {
         <div className="container">
             <ul className="breadcrumb-list">
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" >Home</NavLink>
                 </li>
                 <li>{currentPage}</li>
             </ul>

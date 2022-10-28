@@ -25,7 +25,7 @@
             }
 
             & + li:before {
-                content: ">\00a0>\00a0";
+                content: "\00a0\00a0>\00a0\00a0";
                 font-weight: $font-weight-regular;
                 color: $color-theme-dark;
             }
