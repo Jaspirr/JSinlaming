@@ -52,6 +52,19 @@
     }
 }
 
+.thx {
+    background-color:   #B4F8C8;
+    color: $color-theme-dark;
+    height: 100px;
+    width: 800px;
+    border-radius: 10px;
+    font-size: $font-size-35;
+    font-weight: 400;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width: 768px) {
     .contact-form {
         form {

@@ -6,6 +6,8 @@
         grid-template-areas: "brand menuicons"
                              "menulinks menulinks";
        
+            
+        }
     
         .brand {
             grid-area: brand;
@@ -93,7 +95,7 @@
             }
         }
     }
-}
+
 // varför jag kör 1400px istället för 1200px är för att halva contacts skymdes av menuicons delen under 1400px. 
 @media (min-width: 1400px) {
     .container {
@@ -102,6 +104,11 @@
 
     .mainmenu {
         display: grid;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        right: 0%;
+        z-index: 1;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-areas: "brand menulinks menuicons";
         padding-top: 20px;

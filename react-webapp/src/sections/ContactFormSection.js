@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const ContactFormSection = () => {
     const [contactForm, setContactForm] = useState ({name: '', email: '', comment: ''})
     const [formErrors, setFormErrors] = useState({})
@@ -11,6 +12,8 @@ const ContactFormSection = () => {
 
         if(!values.name) //om name är tom så vill jag...
             errors.name = "You must enter a name"
+        else if(values.name.length < 2)
+            errors.name = "You must enter a name with more than two characters"
         
         if(!values.email) 
             errors.email = "You must enter a e-mail address"
@@ -47,13 +50,13 @@ const ContactFormSection = () => {
                 {
                     submitted ? 
                     (<div className="d-flex justify-content-center align-items-center">
-                        <div>Thank you for your opinion!</div>
+                            <div className="thx">Thank you for your opinion!</div>
                         </div>)
                         :
                         (
                             <>
                                 <h2>Come In Contact With Us</h2>
-                                <pre>{ JSON.stringify(formErrors)}</pre>
+                                
                                 <form onSubmit={handelSubmit} noValidate>
                                     <div>
                                         <input id="name" type="text" placeholder="Your Name" value={contactForm.name} onChange={handleChange}/>
