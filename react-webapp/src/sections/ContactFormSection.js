@@ -25,11 +25,23 @@ const ContactFormSection = () => {
         else if(values.comment.length < 6)
             errors.comment = "Your comment must be longer then six characters"
         
-        if(Object.keys(errors).length === 0) //om den inte innehåller några nycklar(keys, (name,email, comment)) så gör det hära...
-            setSubmitted(true)
-        else
-            setSubmitted(false)
+        if(Object.keys(errors).length === 0){ //om den inte innehåller några nycklar(keys, (name,email, comment)) så gör det hära...
+            
+            let json = JSON.stringify({ values })
+            console.log(json)
         
+            fetch('https://win22-webapi.azurewebsites.net/api/contactform', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: json
+            })
+            .then(res => console.log(res))
+            //setSubmitted(true)
+            } else {
+            //setSubmitted(false)
+            }
         return errors;
     }
 
