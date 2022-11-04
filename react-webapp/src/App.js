@@ -12,20 +12,26 @@ import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
 import NotFoundView from './views/NotFoundView';
 import { ProductContext } from './contexts/contexts'
-import FooterSection from './sections/FooterSection';
-import MainMenuSection from './sections/MainMenuSection';
 
 function App() {
-  
-  
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState({
+    all: [],
+    featuredProducts: []
+  })
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchAllProducts = async () => {
       let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
-      setProducts(await result.json())
+      setProducts({...products, all: await result.json()})
     }
-    fetchData();
+    fetchAllProducts()
+
+    const fetchFeaturedProducts = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
+      setProducts({...products, featuredProducts: await result.json()})
+    }
+    fetchFeaturedProducts()
+
   },[setProducts])
 
   //   { id: 1, name : "modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/9558593/pexels-photo-9558593.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
