@@ -5,6 +5,8 @@ import TopSaleSection from '../sections/TopSaleSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import { GoodInfo } from '../sections/GoodInfo'
 import { ProductContext } from '../contexts/contexts'
+import InspoSection from '../sections/InspoSection'
+import GridRight from '../sections/GridRight'
 
 
 
@@ -17,7 +19,8 @@ const HomeView = () => {
             <MainMenuSection />
             <TopSaleSection />
             <ProductGridSection title="Featured Products" items={productContext.featuredProducts}/>
-            <ProductGridSection title="Top Products" />
+            <InspoSection />
+            <GridRight items={productContext.sale}/>
             <GoodInfo />
             <FooterSection />
         </>

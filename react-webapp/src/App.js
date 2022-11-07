@@ -16,7 +16,8 @@ import { ProductContext } from './contexts/contexts'
 function App() {
   const [products, setProducts] = useState({
     all: [],
-    featuredProducts: []
+    featuredProducts: [],
+    sale: []
   })
 
   useEffect(() => {
@@ -30,9 +31,13 @@ function App() {
       let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
       setProducts({...products, featuredProducts: await result.json()})
     }
+    const fetchSaleProducts = async () => {
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=4')
+      setProducts({...products, sale: await result.json()})
+    }
     fetchFeaturedProducts()
 
-  },[setProducts])
+  }, [])
 
   //   { id: 1, name : "modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/9558593/pexels-photo-9558593.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
   //   { id: 2, name : "modern Black Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://images.pexels.com/photos/9558570/pexels-photo-9558570.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},

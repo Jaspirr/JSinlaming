@@ -1,0 +1,16 @@
+.grid-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gr
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+.box {
+    background-color: $color-gray-1;
+    height: 500px;
+    width: 570px;
+
+}

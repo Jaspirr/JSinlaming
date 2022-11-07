@@ -6,18 +6,21 @@ const TopSaleSection = () => {
     return (
     <section className="top-sale-section">
         <div className="container">
+
+            <img className="img-left" src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png' alt='placeholder'/>
             <div className="top-sale-title-first">
-               SALE UP 
+                SALE UP 
             </div>
             <div className="top-sale-title-second">
-            To 50% Off
+                To 50% Off
             </div>
             <div className="under-text">Online shopping free home delivery over $100</div>
-            <NavLink className="btn-theme btn-card-theme d-xl-none">
+            <NavLink to="/products" id="top-sale-btn" className="btn-theme btn-card-theme">
                 <span className="corner-left"></span>
                 <span className="corner-right"></span>
-                QUICK VIEW
+                SHOP NOW
             </NavLink>
+            <img className="img-right" src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-2.png' alt='placeholder'/>
          </div>
     </section>
   )
