@@ -27,7 +27,7 @@ const PoductCard = ({item}) => {
             <button onClick={addToCompare} className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
             <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
           </div>
-          <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`} className="btn-theme btn-card-theme d-xl-none">
+          <NavLink to={`/products/${item.articleNumber}`} className="btn-theme btn-card-theme d-xl-none">
             <span className="corner-left"></span>
             <span className="corner-right"></span>
             QUICK VIEW

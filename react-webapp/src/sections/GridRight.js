@@ -1,20 +1,21 @@
 import React, { useContext } from 'react'
 import ProductCard from '../components/ProductCard'
-import { ProductContext } from '../contexts/contexts'
+import { SaleContext } from '../contexts/contexts'
 
 const GridRight = ({items = []}) => {
 
-    const products = useContext(ProductContext)
+    const products = useContext(SaleContext)
     
   return (
     <section className="grid-right">
         <div className="container">
             <div>
                 <div className="box"></div>
-            </div>
+            
             {
                 items.map( product => <ProductCard key={product.articleNumber} item={product} />)
             }
+            </div>
         </div>
     </section>
   )

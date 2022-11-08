@@ -4,7 +4,8 @@ import MainMenuSection from '../sections/MainMenuSection'
 import TopSaleSection from '../sections/TopSaleSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import { GoodInfo } from '../sections/GoodInfo'
-import { ProductContext } from '../contexts/contexts'
+import { FeaturedProductsContext } from '../contexts/contexts'
+import { SaleContext } from '../contexts/contexts'
 import InspoSection from '../sections/InspoSection'
 import GridRight from '../sections/GridRight'
 
@@ -12,15 +13,18 @@ import GridRight from '../sections/GridRight'
 
 const HomeView = () => {
     window.top.document.title = 'Fixxo.'
-    const productContext = useContext(ProductContext)
-   
+    const products = useContext(FeaturedProductsContext)
+    const sale = useContext(SaleContext)
+
+    
+    
     return (
         <>
             <MainMenuSection />
             <TopSaleSection />
-            <ProductGridSection title="Featured Products" items={productContext.featuredProducts}/>
+            <ProductGridSection title="Featured Products" items={products}/>
             <InspoSection />
-            <GridRight items={productContext.sale}/>
+            <GridRight items={sale}/>
             <GoodInfo />
             <FooterSection />
         </>
