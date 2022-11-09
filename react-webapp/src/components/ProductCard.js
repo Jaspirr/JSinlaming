@@ -18,7 +18,7 @@ const PoductCard = ({item}) => {
 
 
   return (
-    <div className="col" >
+    
       <div className="card">
         <div className="card-img">
           <img src={item.imageName} alt={item.name}></img>
@@ -46,7 +46,7 @@ const PoductCard = ({item}) => {
           <p className="card-price">{item.price}</p>
         </div>
       </div>
-    </div>
+   
   )
 }
 

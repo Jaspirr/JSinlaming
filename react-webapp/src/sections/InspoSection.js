@@ -18,7 +18,7 @@ const InspoSection = () => {
             <NavLink id="lets-be-btn" className="btn-theme-white btn-card-theme">
                 <span className="corner-left"></span>
                 <span className="corner-right"></span>
-                FLASE SALE
+                FLASH SALE
             </NavLink>
             <img className="lets-be" src={img2} alt="lets-be"/>
 
