@@ -1,5 +1,6 @@
-.grid-right {
-    margin-top: 0px;
+
+.grid-left {
+    margin-top: 60px;
     margin-bottom: 60px;
     
     
@@ -7,23 +8,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
         
-                                
-              
-            .box-right {
+            .box {
                 position: relative;
                 align-items: center;
                 text-align: center;
                 background-color: $color-gray-1;
                 height: 670px;
-                width: 650px;
-                margin-left: 15px;
+                width: 660px;
                 
-                .box-text-right {
+                .box-text {
                     position: absolute;
                     width: 100%;
                     top: 40%;
@@ -31,8 +28,8 @@
                         color: $color-white;
                         font-size: $font-size-45;
                         font-weight: $font-weight-bold;
-                    } 
-                        #box-btn-right {
+                     }
+                        #box-btn {
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -41,20 +38,24 @@
                             margin-right: auto;
                             margin-top: 20px;
                         }
-                     
+                   
                 }
-            .min-right {
-                width: 100%;
-                margin-right: 10px;
-                    
-                    .card {
-                        width: 255px;
-                        .card-body {
-                            text-align: center;
+                .min {
+                    width: 100%;
+                    margin-left: 10px;
+                        
+                        .card {
+                            width: 255px;
+                            .card-body {
+                                text-align: center;
+                            }
                         }
-                    }
+                                
+                }
+        
             }   
-        }
+        
+   
 
         .card {
             border: none;

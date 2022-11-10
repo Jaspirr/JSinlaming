@@ -2,15 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
+
 
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 1110px;
+        max-width: 1200px;
+        padding-top: 30px;
+        border-top: 1px solid $color-gray-1;
+        
     }
+    
 }
 
 .customer-support {
@@ -54,5 +59,7 @@ p {
     align-items: center;
     text-align: center;
     font-size: 1rem;
+    width: 250px;
     font-family: $font-poppins;
+    color: $color-gray-5;
 }
