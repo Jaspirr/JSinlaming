@@ -1,21 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
 
 const PoductCard = ({item}) => {
-
-  const addToWishList = (e) => {
-    console.log(`${e.target}added to wish list`)
-  }
-
-  const addToCompare = (e) => {
-    console.log("added to Compare")
-  }
-
-  const addToCart = (e) => {
-    console.log("added to Cart")
-  }
-
+  const { incrementQuantity } = useShoppingCart()
 
   return (
     
@@ -23,9 +13,9 @@ const PoductCard = ({item}) => {
         <div className="card-img">
           <img src={item.imageName} alt={item.name}></img>
           <div className="card-menu d-xl-none">
-            <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
-            <button onClick={addToCompare} className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
-            <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
+            <button className="menu-link"><i className="fa-regular fa-heart"></i></button>
+            <button className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+            <button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
           </div>
           <NavLink to={`/products/${item.articleNumber}`} className="btn-theme btn-card-theme d-xl-none">
             <span className="corner-left"></span>
@@ -43,7 +33,7 @@ const PoductCard = ({item}) => {
             <i className="fa-sharp fa-solid fa-star"></i>
             <i className="fa-sharp fa-solid fa-star"></i>
           </p>
-          <p className="card-price">{item.price}</p>
+          <p className="card-price">{currencyFormatter(item.price)}</p>
         </div>
       </div>
    

@@ -11,7 +11,8 @@ import CompareView from './views/CompareView';
 import ShoppingCartView from './views/ShoppingCartView';
 import WishListView from './views/WishListView';
 import NotFoundView from './views/NotFoundView';
-import { FeaturedProductsContext, ProductContext, SaleContext } from './contexts/contexts'
+import { FeaturedProductsContext, ProductContext, SaleContext } from './contexts/contexts';
+import { ShoppingCartProvider } from './contexts/ShoppingCartContext';
 
 function App() {
   const [products, setProducts] = useState([])
@@ -42,24 +43,26 @@ function App() {
   
   return (
     <BrowserRouter>
-      <ProductContext.Provider value={products}>
-        <FeaturedProductsContext.Provider value={featured}>
-          <SaleContext.Provider value={sale}>
-            <Routes>
-              <Route path="/" element={<HomeView />} />
-              <Route path="/categories" element={<CategoriesView />} />
-              <Route path="/products" element={<ProductsView />} />
-              <Route path="/products/:name" element={<ProductDetailsView />} />
-              <Route path="/contacts" element={<ContactsView />} />
-              <Route path="/search" element={<SearchView />} />
-              <Route path="/compare" element={<CompareView />} />
-              <Route path="/wishlist" element={<WishListView />} />
-              <Route path="/shoppingcart" element={<ShoppingCartView />} />
-              <Route path="*" element={<NotFoundView />} />
-            </Routes>
-          </SaleContext.Provider>
-        </FeaturedProductsContext.Provider>
-      </ProductContext.Provider>
+      <ShoppingCartProvider>
+        <ProductContext.Provider value={products}>
+          <FeaturedProductsContext.Provider value={featured}>
+            <SaleContext.Provider value={sale}>
+              <Routes>
+                <Route path="/" element={<HomeView />} />
+                <Route path="/categories" element={<CategoriesView />} />
+                <Route path="/products" element={<ProductsView />} />
+                <Route path="/products/:name" element={<ProductDetailsView />} />
+                <Route path="/contacts" element={<ContactsView />} />
+                <Route path="/search" element={<SearchView />} />
+                <Route path="/compare" element={<CompareView />} />
+                <Route path="/wishlist" element={<WishListView />} />
+                <Route path="/shoppingcart" element={<ShoppingCartView />} />
+                <Route path="*" element={<NotFoundView />} />
+              </Routes>
+            </SaleContext.Provider>
+          </FeaturedProductsContext.Provider>
+        </ProductContext.Provider>
+      </ShoppingCartProvider>
     </BrowserRouter>
   );
 }

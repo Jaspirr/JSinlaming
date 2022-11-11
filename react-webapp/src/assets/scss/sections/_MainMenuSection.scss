@@ -65,6 +65,7 @@
                 height: 36px;
                 margin-left: 20px;
                 border-radius: 50%;
+                border: none;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -92,6 +93,10 @@
                 color: $color-white;
                 background-color: $color-theme-dark;
                 box-shadow: 0 0 6px 4px $color-shadow;
+                border: none;
+            }
+
+            button {
                 border: none;
             }
         }

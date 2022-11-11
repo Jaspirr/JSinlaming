@@ -15,7 +15,7 @@ const GridLeft = ({items = []}) => {
                 <div className="box">
                     <div className="box-text">
                         <h2>2 FOR USD $29</h2>
-                        <NavLink id="box-btn" className="btn-theme-white btn-card-theme">
+                        <NavLink to="/categories" id="box-btn" className="btn-theme-white btn-card-theme">
                             <span className="corner-left"></span>
                             <span className="corner-right"></span>
                             FLASH SALE

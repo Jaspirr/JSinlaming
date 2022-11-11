@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import img2 from '../assets/images/showcase-img-2.png'
 const TopSaleSection = () => {
   
     return (
@@ -20,7 +20,8 @@ const TopSaleSection = () => {
                 <span className="corner-right"></span>
                 SHOP NOW
             </NavLink>
-            <img className="img-right" src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-2.png' alt='placeholder'/>
+            <img className="img-right" src={img2}></img>
+            {/* <img className="img-right" src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-2.png' alt='placeholder'/> */}
          </div>
     </section>
   )

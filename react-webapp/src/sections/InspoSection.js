@@ -9,13 +9,13 @@ const InspoSection = () => {
         <div className="container">
             <img className="pamela" src={img1} alt="pamela"/>
             <p className="pamela-title">Pamela Reif's Top Picks</p>
-            <NavLink id="pamela-btn" className="btn-theme-white btn-card-theme">
+            <NavLink to="/categories" id="pamela-btn" className="btn-theme-white btn-card-theme">
                 <span className="corner-left"></span>
                 <span className="corner-right"></span>
                 SHOP NOW
             </NavLink>
             <p className="lets-be-title">Let's Be &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conscious</p>
-            <NavLink id="lets-be-btn" className="btn-theme-white btn-card-theme">
+            <NavLink to="/categories" id="lets-be-btn" className="btn-theme-white btn-card-theme">
                 <span className="corner-left"></span>
                 <span className="corner-right"></span>
                 FLASH SALE

@@ -21,7 +21,7 @@ const GridRight = ({items = []}) => {
                 <div className="box-right">
                     <div className="box-text-right">
                         <h2>2 FOR USD $29</h2>
-                        <NavLink id="box-btn-right" className="btn-theme-white btn-card-theme">
+                        <NavLink to="/categories" id="box-btn-right" className="btn-theme-white btn-card-theme">
                             <span className="corner-left"></span>
                             <span className="corner-right"></span>
                             FLASH SALE
