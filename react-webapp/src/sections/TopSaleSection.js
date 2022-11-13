@@ -4,6 +4,7 @@ import img2 from '../assets/images/showcase-img-2.png'
 const TopSaleSection = () => {
   
     return (
+    // Top sale sektion.
     <section className="top-sale-section">
         <div className="container">
 
@@ -20,8 +21,7 @@ const TopSaleSection = () => {
                 <span className="corner-right"></span>
                 SHOP NOW
             </NavLink>
-            <img className="img-right" src={img2}></img>
-            {/* <img className="img-right" src='https://win22imgstorage.blob.core.windows.net/images/showcase-img-2.png' alt='placeholder'/> */}
+            <img className="img-right " src={img2}></img>
          </div>
     </section>
   )

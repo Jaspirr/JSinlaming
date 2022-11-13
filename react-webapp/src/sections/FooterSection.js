@@ -3,6 +3,7 @@ import ExternalLinkIcon from '../components/ExternalLinkIcon'
 
 const FooterSection = () => {
   return (
+    // längst ner på sidans alla tabbar.
     <footer>
       <div className="socialmedia">
         <ExternalLinkIcon link="https://facebook.com" icon="fa-brands fa-facebook-f"/>    

@@ -2,6 +2,7 @@ import React from 'react'
 
 const MapSection = () => {
   return (
+    // Sektion för kartan i formuläret.
     <section>
         <iframe 
             className="google-map"

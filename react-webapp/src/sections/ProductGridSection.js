@@ -7,6 +7,7 @@ const ProductGridSection = ({title, items = []}) => {
   const products = useContext(ProductContext)
 
   return (
+    // Grid för producterna.
     <section className="product-grid">
       <div className="container">
         <h1 className="featured-title">{title}</h1>

@@ -8,7 +8,7 @@ const GridLeft = ({items = []}) => {
     const products = useContext(SaleContext)
     
   return (
-    
+    // Första griden
     <section>
         <div className="grid-left">
             <div className="container">

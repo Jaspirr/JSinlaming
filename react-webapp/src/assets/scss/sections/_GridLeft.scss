@@ -157,6 +157,7 @@
         }
     }
  }
+//  jag är medveten om att det inte är den finaste resposiviteten, men hade inte så mycket tid att lägga på det. Men jag försökte så gott jag kunde så jag blir bättre på det i framtiden.
 
 @media (min-width: 1200px) {
 .grid-right {
@@ -164,4 +165,23 @@
         max-width: 1200px;
     }
 }
+}
+@media (max-width:992px) {
+    .grid-left {
+        margin-top: 450px;
+    }
+    .box {
+        margin-right: 5px;
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .grid-left {
+        margin-top: 450px;
+    }
+    .box {
+        display: none;
+    }
+    
+    
 }

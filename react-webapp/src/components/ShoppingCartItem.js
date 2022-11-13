@@ -9,6 +9,7 @@ const ShoppingCartItem = ({item}) => {
 
 
     return (
+        // kundvagnen
         <div className="shoppingcart-item">
             <div className="item-image">
                 <img src={item.product.imageName} alt={item.product.name} />

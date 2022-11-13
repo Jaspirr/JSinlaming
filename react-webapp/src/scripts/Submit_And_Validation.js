@@ -1,3 +1,5 @@
+// Validering av formuläret
+
 export const submitData = async (url, method, data, contentType = 'application/json') => {
     
     const res = await fetch(url, {

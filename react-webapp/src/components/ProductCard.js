@@ -8,7 +8,7 @@ const PoductCard = ({item}) => {
   const { incrementQuantity } = useShoppingCart()
 
   return (
-    
+    // component för card
       <div className="card">
         <div className="card-img">
           <img src={item.imageName} alt={item.name}></img>

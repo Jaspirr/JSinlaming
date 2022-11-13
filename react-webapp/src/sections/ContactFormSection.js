@@ -62,6 +62,7 @@ const ContactFormSection = () => {
 
 
     return (
+        // Formulär sektionen.
         <section className="contact-form">
                 <div className="container">
                         
@@ -69,7 +70,7 @@ const ContactFormSection = () => {
                         submitted ? (
                         <div className="alert alert-success text-center"  role="alert">
                                 <h1>Thank you for your opinion!</h1>
-                                <p>We will contact you as soon as possible.</p>
+                                <p className="confirm">We will contact you as soon as possible.</p>
                             </div> ) : (<></>)
                             
                         }
@@ -78,7 +79,7 @@ const ContactFormSection = () => {
                         failedSubmit ? (
                         <div className="alert alert-danger text-center" role="alert">
                                 <h1>Someting went wrong!</h1>
-                                <p>We couldn't submit your comment right now.</p>
+                                <p className="confirm">We couldn't submit your comment right now.</p>
                             </div> ) : (<></>)
                             
                         }

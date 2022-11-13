@@ -2,6 +2,7 @@ import React from 'react'
 
 export const GoodInfo = () => {
   return (
+    // bra info om sidan.
     <section className="good-info">
         <div className="container">
             <div className="customer-support">

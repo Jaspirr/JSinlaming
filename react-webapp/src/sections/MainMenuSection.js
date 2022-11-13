@@ -13,6 +13,7 @@ const MainMenuSection = () => {
     }
     
     return (
+        // Top meny 
         <nav className="mainmenu container">
             <NavLink className="brand" to="/" end>Fixxo.</NavLink>
             <div className={`menu-links ${ showMenu ? "d-grid" : "" }`}>

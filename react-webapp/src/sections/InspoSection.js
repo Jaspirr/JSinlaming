@@ -5,6 +5,7 @@ import img2 from '../assets/images/lets-be.svg'
 
 const InspoSection = () => {
   return (
+    // Insperation för kunderna.
     <section className="inspo">
         <div className="container">
             <img className="pamela" src={img1} alt="pamela"/>

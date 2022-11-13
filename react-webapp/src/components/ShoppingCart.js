@@ -6,6 +6,7 @@ const ShoppingCart = () => {
     const { cartItems } = useShoppingCart()
   
     return (
+    // Kundvagnen
     <div className="shoppingcart offcanvas offcanvas-end" tabIndex="-1" id="shoppingCart" aria-labelledby="shoppingCartLabel">
         <div className="offcanvas-header">
             <h4 className="offcanvas-title" id="shoppingCartLabel"><i className="fa-regular fa-bag-shopping"></i> Shopping Cart</h4>

@@ -8,6 +8,7 @@ const GridRight = ({items = []}) => {
     const products = useContext(SaleContext)
 
   return (
+    // Andra griden.
     <section>
         <div className="grid-right">
             <div className="container">
